@@ -4,47 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../img/logotipo.ico.png">
+    <!-- Link boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
-    <title>Infosos | Cursos</title>
+    <link rel="icon" href="../img/logotipo.ico.png">
+    <title>Infosos | Contacto</title>
+ 
 </head>
 <body>
-    <div class="layout">
-        <div class="logo">
-            <img src="../img/logo.png" alt="logotipo Infosos">
-        </div>
-        <div class="login">
-            <ul>
-                <li class="header__li"><a class="header__a" href="#">Login</a></li>
-            </ul>
-        </div>
-        <nav class="nav">
-            <ul>
-                <li class="anima1"><a class="header__a" href="../index.html">Home</a></li>
-                <li class="anima2"><a class="header__a" href="./cursos.html">Cursos</a></li>
-                <li class="anima3"><a class="header__a" href="./servicios.html">Servicios</a></li>
-                <li class="anima4"><a class="header__a" href="./contacto.html">Contacto</a></li>
-            </ul>           
+    <header>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">
+                <img src="../img/logo.png" alt="logotipo" width="150px">
+            </a>
+          
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/cursos.html">Cursos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                  </li>                
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
         </nav>
-    </div>
+    </header>
+        
 
+    <div class="jumbotron">
+        <h1>Contacto !!!</h1>
+        <p>Contanos en que podemos ayudarte</p>
+    </div>        
 
-    <main class="main">
-        <h1>¿En que podemos ayudarte?</h1>
-                
-        <form action="envia.php" method="post" enctype="application/x-www-form-urlencoded">
+    <main class="formulario">
+        <form action="envia.php"  method="post" enctype="application/x-www-form-urlencoded">
     
             <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" required>
+            <input type="text" class="form-control" name="nombre" required>
  
             <label for="email">Correo Electrónico</label>
-            <input type="email" name="email" required>
+            <input type="email" class="form-control" name="email" required>
     
             <label for="telefono">Telefono</label>
-            <input type="telefono" name="telefono" required>
+            <input type="telefono" class="form-control" name="telefono" required>
 
             <label for="asunto">Asunto de la consulta</label>
-            <select name="asunto">
+            <select name="asunto" class="form-control">
                 <option value="curso_oppc">Curso Operador PC</option>
                 <option value="curso_oplx">Curso Linux</option>
                 <option value="curso_dweb">Curso Diseño Web</option>
@@ -55,50 +77,53 @@
             </select>
 
             <label for="texto">Descripcion</label>
-            <textarea name="texto" id="texto" cols="30" rows="5" placeholder="Escribe aqui la descripcion">Escriba aqui su descripcion</textarea>
+            <textarea name="texto" class="form-control" id="texto" cols="30" rows="5" placeholder="Escribe aqui la descripcion">Escriba aqui su descripcion</textarea>
             <br>
-            <input type="submit" value="Enviar">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+               
+            
     
-            <input type="reset" value="Borrar todo">
-    
-        </form>       
+        </form>             
+     
     </main>
 
-    <footer class="footer">
-        <div class="footer__bloque">
-            <h2>Contacto</h2>
+
+
+    <footer class="row text-center container-fluid fondo-negro">
+        <div class=" container col-sm-12 col-md-3 footer_bloque">
+            <h6>Contacto</h6>
             <ul>
-                <li>Direccion Postal</li>
-                <li>www.miweb.com</li>
-                <li>info@miweb.com</li>
-                <li>+59899123456</li>
-                <li>URUGUAY</li>
-                </li>
+                <li>+598 99793677</li>
+                <li>www.infosos.com.uy</li>
+                <li>info@infosos.com.uy</li>
+                <li>Uruguay</li>
+            </ul> 
+        </div>
+        <div class="container col-sm-12 col-md-3 footer_bloque">
+            <h6>Mapa del Sitio</h6>
+            <ul>
+                <li><a class="footer__a" href="#">Home</a></li>
+                <li><a class="footer__a" href="pages/cursos.html">Cursos</a></li>
+                <li><a class="footer__a" href="pages/servicios.html">Servicios</a></li>
+                <li><a class="footer__a" href="pages/nosotros.html">Nosotros</a></li>
+                <li><a class="footer__a" href="pages/contacto.html">Contacto</a></li>
             </ul>
         </div>
-
-        <div class="footer__bloque">
-            <h2>Mapa del Sitio</h2>
-            <ul>
-                <li><a class="footer__a" href="../index.html">Home</a></li>
-                <li><a class="footer__a" href="./cursos.html">Cursos</a></li>
-                <li><a class="footer__a" href="./servicios.html">Servicios</a></li>
-                <li><a class="footer__a" href="./nosotros.html">Nosotros</a></li>
-                <li><a class="footer__a" href="./contacto.html">Contacto</a></li>
-            </ul>
-        </div>
-
-        <div class="footer__bloque">
-            <h2>Redes</h2>
+        <div class="container col-sm-12 col-md-3 footer_bloque">
+            <h6>Redes</h6>
             <ul>
                 <li>Facebook</li>
                 <li>Instagram</li>
                 <li>twitter</li>
-                
             </ul>
         </div>        
     </footer>
 
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 
 </body>
 </html>

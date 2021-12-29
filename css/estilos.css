@@ -6,99 +6,42 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     /* background-color: rgb(13, 0, 196); */
-    background-image: linear-gradient(rgb(8, 2, 97),rgb(0, 0, 255));
-    color:white;
-    height: 100vh;
+    background-image: linear-gradient(rgb(0, 0, 0),rgb(0, 0, 255));
+    color: white;
 }
 
-@media only screen and (max-width: 649px){
-    .layout {
-        display: grid;
-        grid-template-areas: 
-            "logo"
-            "login"
-            "nav"
-            "footer";
-        grid-template-columns: 100%;
-      
-    }
-    
-    .logo {
-        grid-area: logo;
-        background-color: black;
-        align-self: center;
-    }
-    
-    .login {
-        grid-area: login;
-        background-color: black;
-        text-align: center;
-    }
-    
-    .login li {
-        list-style: none;
-        display: inline-block;
-        width: 100px;
-        padding: 5px;
-        margin-bottom: 10px;
-        border-radius: 5px;
-        text-align: center;    }
-    
-    .nav {
-        grid-area: nav;
-        background-color: black;
-        text-align: center;
-    }
-    
-    .nav li {
-        list-style: none;
-        display: inline-block;
-        width: 100%;
-        padding: 20px 0;
-        margin: 2px 0;
-        border-radius: 5px;
-        background-color: rgb(247, 106, 6);
-        text-align: center;
-    }
-    
-    .login a, .nav a{
-        text-decoration: none;
-        color:white;
-    }
-    
-    
-    .main {
-        grid-area: main;
-        padding: 30px;
-        line-height: 2.5;
-        text-align: center;
-    }
-    
-    .footer {
-        grid-area: footer;
-        background-color: rgb(2, 0, 92);
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-    }
-    
-    .footer__bloque {
-        width: 100%;
-        padding: 20px 0;
-        text-align: center;
-    }
-    
-    .footer li {
-       list-style: none;
-       font-size: .8em;
-       padding: 3px;
-    }
-    
-    .footer a {
-        text-decoration: none;
-        color: white;
-    }
-    
+.fondo-negro {
+    background-color: black;
+}
+
+.jumbotron {
+    /* background-image: url(/img/portada.jpg);
+    background-size: cover;
+    background-position:right; */
+    background-color: orange;
+    height: 200px;
+    color: black;
+}
+.jumbotron h1 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px #313131;
+    color: rgb(255, 255, 255);
+}
+
+footer h6 {
+    color: chartreuse;
+    margin-top: 20px;
+}
+.footer_bloque li {
+    list-style: none;
+    font-size: .8rem;
+}
+.footer_bloque a{
+    text-decoration:none;
+    color: white;
+}
+
+
     /* ESTILOS CURSOS   */
     /*------------------*/
     .cursos {
@@ -110,417 +53,12 @@ body {
     }
     
     .curso {
-        width: 300px;
-        height: 350px;
-        border-radius: 0 40px;
-        background-color: whitesmoke;
-        margin: 15px
-    }
-    
-    h3 {
-        color: rgb(13, 1, 66);
-    }
-    
-    .curso__imagen {
-        width: 100%;
-        height: 160px;
-        border-bottom: 5px solid yellow;
-    }
-    
-    .curso__oppc {
-        background-image: url(../img/curso_oppc.jpg);
-        background-size: cover;
-    }
-    .curso__linux {
-        background-image: url(../img/curso_oplx.jpg);
-        background-size: cover;
-    }
-    .curso__excel {
-        background-image: url(../img/curso_excel.jpg);
-        background-size: cover;
-    }
-    .curso__google {
-        background-image: url(../img/curso_google.jfif);
-        background-size: cover;
-    }
-    .curso__dweb {
-        background-image: url(../img//curso_dweb.jpg);
-        background-size: cover;
-    }
-    .curso__python {
-        background-image: url(../img/curso_python.jpg);
-        background-size: cover;
-    }
-    
-    .curso a {
-        text-decoration: none;
-        display: inline-block;  
-    }
-    
-    /*SERVICIOS */
-    .servicios {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .servicio {
-        width: 100%;
-        background-color: rgb(75, 51, 209);
-        margin-bottom: 20px;
-        border-top: 4px solid orangered;
-    }
-    
-    .servicio h3 {
-        font-size: 3em;
-        color: whitesmoke;
-    }
-    
-    .servicio__imagen {
-        width: 100%;
-        height: 300px;
-    }
-    
-    .servicio__web {
-        background-image: url(../img/servicio_web.png);
-        background-size: cover;
-        background-position: center;
-    }
-    
-    .servicio__redes {
-        background-image: url(/img//servicios_redes.jpg);
-        background-size: cover;
-        background-position: center;
-    }
-    
-    .servicio__soporte {
-        background-image: url(/img/servicio_soporte.jfif);
-        background-size: cover;
-        background-position: center;
-    }
-    
-    /*formulario*/
-    /*--------------------*/
-    
-    label {
-        display: block;
-    }
-    
-    input {
-        padding: 10px;
-    }
-
-}
-
-
-
-
-@media only screen and (min-width: 650px) and (max-width: 839px) {
-    .layout {
-        display: grid;
-        grid-template-areas: 
-            "logo logo"
-            "nav login"
-            "main main"
-            "footer footer";
-        grid-template-columns: 75% 25%;
-      
-    }
-    
-    .logo {
-        grid-area: logo;
-        background-color: black;
-        align-self: center;
-    }
-    
-    .login {
-        grid-area: login;
-        background-color: black;
-        text-align: right;
-    }
-    
-    .login li {
-        list-style: none;
-        display: inline-block;
-        width: 100px;
-        padding: 5px;
-        margin-bottom: 10px;
-        border-radius: 5px;
-        text-align: center;    }
-    
-    .nav {
-        grid-area: nav;
-        background-color: black;
-        text-align: center;
-    }
-    
-    .nav li {
-        list-style: none;
-        display: inline-block;
-        width: 100px;
-        padding: 5px;
-        border-radius: 5px;
-        background-color: rgb(247, 106, 6);
-        text-align: center;
-    }
-    
-    .login a, .nav a{
-        text-decoration: none;
-        color:white;
-    }
-    
-    
-    .main {
-        grid-area: main;
-        padding: 30px;
-        line-height: 2.5;
-        text-align: center;
-    }
-    
-    .footer {
-        grid-area: footer;
-        background-color: rgb(2, 0, 92);
-        display: flex;
-        justify-content: space-around;
-    }
-    
-    .footer__bloque {
-        width: 300px;
-        padding: 20px 0;
-        text-align: center;
-    }
-    
-    .footer li {
-       list-style: none;
-       font-size: .8em;
-       padding: 3px;
-    }
-    
-    .footer a {
-        text-decoration: none;
-        color: white;
-    }
-    
-    /* ESTILOS CURSOS   */
-    /*------------------*/
-    .cursos {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: space-around;
-    }
-    
-    .curso {
-        width: 200px;
-        height: 300px;
-        border-radius: 0 40px;
-        background-color: whitesmoke;
-        margin: 15px
-    }
-    
-    h3 {
-        color: rgb(13, 1, 66);
-    }
-    
-    .curso__imagen {
-        width: 100%;
-        height: 160px;
-        border-bottom: 5px solid yellow;
-    }
-    
-    .curso__oppc {
-        background-image: url(../img/curso_oppc.jpg);
-        background-size: cover;
-    }
-    .curso__linux {
-        background-image: url(../img/curso_oplx.jpg);
-        background-size: cover;
-    }
-    .curso__excel {
-        background-image: url(../img/curso_excel.jpg);
-        background-size: cover;
-    }
-    .curso__google {
-        background-image: url(../img/curso_google.jfif);
-        background-size: cover;
-    }
-    .curso__dweb {
-        background-image: url(../img//curso_dweb.jpg);
-        background-size: cover;
-    }
-    .curso__python {
-        background-image: url(../img/curso_python.jpg);
-        background-size: cover;
-    }
-    
-    .curso a {
-        text-decoration: none;
-        display: inline-block;  
-    }
-    
-    /*SERVICIOS */
-    .servicios {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .servicio {
-        width: 100%;
-        background-color: rgb(75, 51, 209);
-        margin-bottom: 20px;
-        border-top: 4px solid orangered;
-    }
-    
-    .servicio h3 {
-        font-size: 3em;
-        color: whitesmoke;
-    }
-    
-    .servicio__imagen {
-        width: 100%;
-        height: 300px;
-    }
-    
-    .servicio__web {
-        background-image: url(../img/servicio_web.png);
-        background-size: cover;
-        background-position: center;
-    }
-    
-    .servicio__redes {
-        background-image: url(/img//servicios_redes.jpg);
-        background-size: cover;
-        background-position: center;
-    }
-    
-    .servicio__soporte {
-        background-image: url(/img/servicio_soporte.jfif);
-        background-size: cover;
-        background-position: center;
-    }
-    
-    /*formulario*/
-    /*--------------------*/
-    
-    label {
-        display: block;
-    }
-    
-    input {
-        padding: 10px;
-    }
-
-}
-
-@media only screen and (min-width: 840px) {
-    .layout {
-        display: grid;
-        grid-template-areas: 
-            "logo login"
-            "logo nav"
-            "main main"
-            "footer footer";
-        grid-template-columns: 300px 1fr;
-      
-    }
-    
-    .logo {
-        grid-area: logo;
-        background-color: black;
-    }
-
-        
-    .imagen_logo {
-        animation-name: logo;
-        animation-duration: .5s;
-        animation-iteration-count: 1;
-    }
-
-    .login {
-        grid-area: login;
-        background-color: black;
-        text-align: right;
-    }
-    
-    .login li {
-        list-style: none;
-        display: inline-block;
-        width: 100px;
-        padding: 5px;
-        margin: 10px 30px;
-    }
-    
-    .nav {
-        grid-area: nav;
-        background-color: black;
-        text-align: center;
-    }
-    
-    .nav li {
-        list-style: none;
-        display: inline-block;
-        background-color: tomato;
-        width: 150px;
-        padding: 5px;
-        border-radius: 5px;
-        text-align: center;
-    }
-
-
-    .login a, .nav a{
-        text-decoration: none;
-        color:white;
-    }
-    
-    
-    .main {
-        grid-area: main;
-        padding: 30px;
-        line-height: 2.5;
-        text-align: center;
-    }
-    
-    .footer {
-        grid-area: footer;
-        background-color: rgb(2, 0, 92);
-        display: flex;
-        justify-content: space-around;
-    }
-    
-    .footer__bloque {
-        width: 300px;
-        padding: 20px 0;
-        text-align: center;
-    }
-    
-    .footer li {
-       list-style: none;
-       font-size: .8em;
-       padding: 3px;
-    }
-    
-    .footer a {
-        text-decoration: none;
-        color: white;
-    }
-    
-    /* ESTILOS CURSOS   */
-    /*------------------*/
-    .cursos {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: space-around;
-    }
-    
-    .curso {
-        width: 200px;
+        width: 250px;
         height: 300px;
         border-radius: 0 40px;
         background-color: whitesmoke;
         margin: 15px;
-
+        text-align:center;
         transition: all 0.5s;
     }
 
@@ -567,119 +105,35 @@ body {
         text-decoration: none;
         display: inline-block;  
     }
-    
-    /*SERVICIOS */
+
+    /* ESTILOS SERVICIOS*/
+    /*------------------*/
     .servicios {
-        display: flex;
-        flex-direction: column;
+        background-image: linear-gradient(blue,black);
+        margin-bottom: 15px;
+        color: white;
+        padding: 30px;
+        height: 500px;
     }
     
-    .servicio {
-        width: 100%;
-        background-color: rgb(75, 51, 209);
-        margin-bottom: 20px;
-        border-top: 4px solid orangered;
+    /* ESTILOS NOSOTROS   */
+    /*------------------*/
+    .nosotros {
+        background-image: linear-gradient(blue,black);
+        width: 70%;
+        margin-left: 10%;
+        height: 500px;
+        line-height: 2rem;
+        padding: 5%;
+        margin-bottom: 20PX;
     }
     
-    .servicio h3 {
-        font-size: 3em;
-        color: whitesmoke;
-    }
-    
-    .servicio__imagen {
-        width: 100%;
-        height: 300px;
-    }
-    
-    .servicio__web {
-        background-image: url(../img/servicio_web.png);
-        background-size: cover;
-        background-position: center;
-    }
-    
-    .servicio__redes {
-        background-image: url(/img//servicios_redes.jpg);
-        background-size: cover;
-        background-position: center;
-    }
-    
-    .servicio__soporte {
-        background-image: url(/img/servicio_soporte.jfif);
-        background-size: cover;
-        background-position: center;
-    }
-    
-    /*formulario*/
-    /*--------------------*/
-    
-    label {
-        display: block;
-    }
-    
-    input {
-        padding: 10px;
-    }
-    
-}
+    /* ESTILOS FORMULARIO*/
+    /*------------------*/
 
-
-/* ANIMACIONES*/
-
-@keyframes carga {
-    0% {
-        opacity: 0;
+    .formulario {
+        width: 70%;
+        padding-left: 25%;
     }
-    100% {
-        opacity: 1;
-    }
-}
+    
 
-@keyframes menu {
-    0% {
-        background-color: black;
-    }
-    100% {
-        background-color: orangered;
-    }
-}
-
-@keyframes logo {
-    0% {
-        width: 0px;
-    }
-    100% {
-        width: 100%;
-    }
-}
-
-.anima1 {
-    animation-name: menu;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
-    animation-duration: .5s;
-    animation-delay: .25s;
-}
-
-.anima2 {
-    animation-name: menu;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
-    animation-duration: .5s;
-    animation-delay: 0.5s;
-}
-
-.anima3 {
-    animation-name: menu;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
-    animation-duration: .5s;
-    animation-delay: .75s;
-}
-
-.anima4 {
-    animation-name: menu;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
-    animation-duration: .5s;
-    animation-delay: 1s;
-}

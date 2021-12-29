@@ -4,81 +4,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../img/logotipo.ico.png">
+    <!-- Link boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
-    <title>Infosos | Nosotros</title>
+    <link rel="icon" href="/img/logotipo.ico.png">
+    <title>Infosos | Cursos</title>
+ 
 </head>
 <body>
     <header>
-        <img class="header__logo" src="../img/logo.png" alt="Logotipo infosos">
-
-        <div class="header__login">
-            <ul>
-                <li class="header__li"><a class="header__a" href="#">Login</a></li>
-            </ul>
-        </div>
-        
-        <nav class="header__nav">
-            <ul>
-                <li><a class="header__a" href="../index.html">Home</a></li>
-                <li><a class="header__a" href="../pages/cursos.html">Cursos</a></li>
-                <li><a class="header__a" href="../pages/servicios.html">Servicios</a></li>
-                <li><a class="header__a" href="#">Nosotros</a></li>
-                <li><a class="header__a" href="../pages/contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">
+                <img src="../img/logo.png" alt="logotipo" width="150px">
+            </a>
+          
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/cursos.html">Cursos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
         </nav>
-        
     </header>
+        
 
-    <main>
+    <div class="jumbotron">
+        <h1>Mas de 25 años en tecnología !!!</h1>
+        <p>Nuestra larga trayectoria nos respalda</p>
+    </div>        
+
+    <main class="container-fluid">
         <div class="nosotros">
-
-            <h1>Conoce nuestra historia</h1>
-            <p>Infosos nace como una proyecto para acercar la informática a las empresa y asistir en la implementación de sistemas y capacitar para ponerlos en marcha.</p>
-            <p>Desde hace mas de 25 años capacitamos empresas y personas, desde usuarios a programadores han sido parte de nuestra historia y de nuestro crecimiento.</p>
-            <p>Durante estos años hemos visto la llegada permanente de nuevas tecnologías, y tuvimos que capacitarnos en forma constante para poner al alcance de nuestros clientes siempre lo mas actual.</p>
-            <p>En ese camino fuimos recogiendo experiencias y aprendiendo de nuestros clientes para acercar soluciones eficientes adaptadas a cada necesidad y cada problema.
-            </p>
-            <p>Ponemos al alcance de nuestros clientes toda nuestra experiencia, todo nuestro conocimiento y sobre todo todas nuestras ganas de brindar siempre un solución a cada problema y de encontrar en cada desafío la oportunidad de crecer.</p>
-            <p>Pablo Noble</p>
-
-        </div>
+            <h2>Conocenos</h2>
+            <p>Infosos tiene en l mercado mas de 25 años, durante este tiempo hemos desarrollado una vasta experienciay mantenido un cultura de actualizacion permanente de manera de brinar un servicio de excelencia.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti quaerat quidem ut aperiam quam, facere minima optio illum sapiente libero. Architecto mollitia tempore, saepe rem illo porro animi. Magnam, aperiam?</p>
+        </div>   
+     
     </main>
 
-    <footer class="footer">
-        <div class="footer__bloque">
-            <h2>Contacto</h2>
+
+
+    <footer class="row text-center container-fluid fondo-negro">
+        <div class=" container col-sm-12 col-md-3 footer_bloque">
+            <h6>Contacto</h6>
             <ul>
-                <li>Direccion Postal</li>
-                <li>www.miweb.com</li>
-                <li>info@miweb.com</li>
-                <li>+59899123456</li>
-                <li>URUGUAY</li>
-                </li>
+                <li>+598 99793677</li>
+                <li>www.infosos.com.uy</li>
+                <li>info@infosos.com.uy</li>
+                <li>Uruguay</li>
+            </ul> 
+        </div>
+        <div class="container col-sm-12 col-md-3 footer_bloque">
+            <h6>Mapa del Sitio</h6>
+            <ul>
+                <li><a class="footer__a" href="#">Home</a></li>
+                <li><a class="footer__a" href="pages/cursos.html">Cursos</a></li>
+                <li><a class="footer__a" href="pages/servicios.html">Servicios</a></li>
+                <li><a class="footer__a" href="pages/nosotros.html">Nosotros</a></li>
+                <li><a class="footer__a" href="pages/contacto.html">Contacto</a></li>
             </ul>
         </div>
-
-        <div class="footer__bloque">
-            <h2>Mapa del Sitio</h2>
-            <ul>
-                <li><a class="footer__a" href="../index.html">Home</a></li>
-                <li><a class="footer__a" href="../pages/cursos.html">Cursos</a></li>
-                <li><a class="footer__a" href="../pages/servicios.html">Servicios</a></li>
-                <li><a class="footer__a" href="#">Nosotros</a></li>
-                <li><a class="footer__a" href="../pages/contacto.html">Contacto</a></li>
-            </ul>
-        </div>
-
-        <div class="footer__bloque">
-            <h2>Redes</h2>
+        <div class="container col-sm-12 col-md-3 footer_bloque">
+            <h6>Redes</h6>
             <ul>
                 <li>Facebook</li>
                 <li>Instagram</li>
                 <li>twitter</li>
-                
             </ul>
         </div>        
     </footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 
 </body>
 </html>
