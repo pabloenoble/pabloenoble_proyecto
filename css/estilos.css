@@ -5,8 +5,7 @@
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* background-color: rgb(13, 0, 196); */
-    background-image: linear-gradient(rgb(0, 0, 0),rgb(0, 0, 255));
+    background-image: linear-gradient(rgb(197, 191, 252),rgb(240, 240, 243));
     color: white;
 }
 
@@ -14,19 +13,92 @@ body {
     background-color: black;
 }
 
+/* ESTILOS NAV*/
+
+.navbar {
+    background-color: rgb(0, 0, 0) !important;
+}
+
+.nav-link:hover {
+    color: white !important;
+    border-bottom: 2px solid red;
+    font-style: bold;
+}
+/*FIN ESTILOS NAV*/
+
+/*ESTILO SCARRUSEL */
+.carousel-caption h3 {
+    font-size: 3rem;
+    text-shadow: 5px 5px 5px grey;
+}
+
+.carousel-caption p {
+    font-size: 2rem;
+    color: yellow;
+}
+/*FIN ESTILOS CARRUSEL*/
+
+
+/*ESTILOS JUMBOTRON*/
 .jumbotron {
     /* background-image: url(/img/portada.jpg);
     background-size: cover;
     background-position:right; */
-    background-color: orange;
+    background-color: rgb(64, 80, 223);
     height: 200px;
     color: black;
+    margin:0;
+    border-radius: 0;
 }
+
 .jumbotron h1 {
     font-size: 2.5rem;
     text-shadow: 2px 2px #313131;
     color: rgb(255, 255, 255);
+    animation-duration: 6s;
+    animation-name: anima-titulo;
+    animation-iteration-count: 1;
 }
+
+@keyframes anima-titulo {
+    0% {
+      opacity: 0;
+    }
+  
+    20% {
+      opacity: 100;
+    }
+    80% {
+      opacity: 100;  
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .jumbotron p {
+    font-size: 1rem;
+    text-shadow: 2px 2px #313131;
+    color: rgb(255, 255, 255);
+    animation-duration: 4s;
+    animation-name: anima-parrafo;
+    animation-iteration-count: 1;
+
+}
+  @keyframes anima-parrafo {
+    0% {
+      font-size: 0;
+    }
+    70% {
+        font-size: 1.5rem;
+    }
+    100% {
+        font-size: 1rem;
+    }
+  }
+
+
+/* FIN ESTILOS JUMBOTRON*/
 
 footer h6 {
     color: chartreuse;
@@ -55,15 +127,17 @@ footer h6 {
     .curso {
         width: 250px;
         height: 300px;
-        border-radius: 0 40px;
+        border-radius: 10px;
         background-color: whitesmoke;
-        margin: 15px;
+        margin: 20px;
         text-align:center;
         transition: all 0.5s;
+        border: 2px solid white;
     }
 
     .curso:hover {
-        transform: scale(1.2,1.1);
+        transform: scale(1.2,1.2);
+        background-color: white;
     }
     
     h3 {
@@ -104,16 +178,26 @@ footer h6 {
     .curso a {
         text-decoration: none;
         display: inline-block;  
+        margin-top: 20px;
+        padding: 5px;
+        border-radius: 5px;
+        color: white;
+        background-color: red
     }
 
     /* ESTILOS SERVICIOS*/
     /*------------------*/
     .servicios {
-        background-image: linear-gradient(blue,black);
-        margin-bottom: 15px;
+        background-image: linear-gradient(blue,rgb(78, 103, 185));
+        margin: 15px;
         color: white;
         padding: 30px;
         height: 500px;
+        transition: all 0.5s;
+    }
+
+    .servicios:hover {
+        transform: scale(1.1,1.1);
     }
     
     /* ESTILOS NOSOTROS   */
@@ -134,6 +218,10 @@ footer h6 {
     .formulario {
         width: 70%;
         padding-left: 25%;
+    }
+
+    .formulario label {
+        color: black;
     }
     
 
