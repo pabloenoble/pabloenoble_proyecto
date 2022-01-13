@@ -1,0 +1,164 @@
+/*PARAMETRIZACION DEL ENTORNO*/
+/*--------------------------*/
+/*Barra Navegacion*/
+$nav-color: rgb(0, 0, 0);
+
+/*Body*/
+$body-color: rgb(126, 134, 245);
+$body-texto-color: white;
+
+/*JumboTron*/
+$jumbo-color:blue;
+$jumbo-altura: 200px;
+
+/*footer*/
+$footer-color: rgb(0, 0, 0);
+$footer-color-titulo: chartreuse;
+$footer-color-texto: white;
+
+
+@import "_servicio";
+@import "_cursos";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: $body-color;
+    color: $body-texto-color;
+}
+
+
+
+/* ESTILOS NAV*/
+
+.navbar {
+    background-color: $nav-color !important;
+}
+
+.nav-link:hover {
+    color: white !important;
+    border-bottom: 2px solid red;
+    font-style: bold;
+}
+/*FIN ESTILOS NAV*/
+
+/*ESTILO SCARRUSEL */
+.carousel-caption h3 {
+    font-size: 3rem;
+    text-shadow: 5px 5px 5px grey;
+}
+
+.carousel-caption p {
+    font-size: 2rem;
+    color: yellow;
+}
+/*FIN ESTILOS CARRUSEL*/
+
+
+/*ESTILOS JUMBOTRON*/
+.jumbotron {
+    /* background-image: url(/img/portada.jpg);
+    background-size: cover;
+    background-position:right; */
+    background-color: $jumbo-color;
+    height: $jumbo-altura;
+    color: black;
+    margin:0;
+    border-radius: 0;
+
+    h1 {
+        font-size: 3rem;
+        text-shadow: 2px 2px #313131;
+        color: rgb(255, 255, 255);
+        animation-duration: 1s;
+        animation-name: anima-titulo;
+        animation-iteration-count: 1;
+    }
+
+    p {
+        font-size: 1rem;
+        text-shadow: 2px 2px #313131;
+        color: rgb(255, 255, 255);
+        animation-duration: 1s;
+        animation-name: anima;
+        animation-iteration-count: 1;
+    }
+}
+
+
+
+@keyframes anima-titulo {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 100;
+    }
+  }
+
+  @keyframes anima {
+    0% {
+      font-size: 0;
+    }
+    
+    100% {
+        font-size: 1rem;
+    }
+  }
+
+
+/* FIN ESTILOS JUMBOTRON*/
+
+
+/*ESTILLOS FOOTER*/
+footer {
+    background-color: $footer-color;
+    
+    h6 {
+        color: $footer-color-titulo;
+        margin-top: 20px;
+    }
+}
+
+.footer_bloque {
+    li {
+        list-style: none;
+        font-size: .8rem;
+    }
+    a{
+        text-decoration:none;
+        color:$footer-color-texto;
+    }    
+}
+/*FIN ESTILOS FOOTER*/
+
+   
+/* ESTILOS NOSOTROS   */
+/*------------------*/
+.nosotros {
+    width: 70%;
+    margin-left: 10%;
+    height: 500px;
+    line-height: 2rem;
+    padding: 5%;
+    margin-bottom: 20PX;
+}
+    
+/* ESTILOS FORMULARIO*/
+/*------------------*/
+
+.formulario {
+    width: 70%;
+    padding-left: 25%;
+    
+    label {
+        color: black;
+    }
+}
+   
+
