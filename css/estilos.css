@@ -13,8 +13,8 @@
   border-radius: 10px;
   padding: 15px;
   height: 370px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .servicios p {
@@ -47,18 +47,18 @@
 }
 
 .curso {
-  width: 250px;
   height: 300px;
+  width: 250px;
   border-radius: 10px;
   background-color: whitesmoke;
   margin: 20px;
   text-align: center;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   border: 2px solid white;
 }
 
-curso:hover {
+.curso:hover {
   -webkit-transform: scale(1.2, 1.2);
           transform: scale(1.2, 1.2);
   background-color: white;
@@ -68,39 +68,39 @@ h3 {
   color: #0d0142;
 }
 
-.curso__imagen {
-  width: 100%;
+.curso__imagen, .curso__operadorpc, .curso__linux, .curso__excel, .curso__google, .curso__disenoweb, .curso__python {
   height: 160px;
+  width: 100%;
   border-bottom: 5px solid yellow;
 }
 
-.curso__oppc {
-  background-image: url(../img/curso_oppc.jpg);
+.curso__operadorpc {
+  background-image: url("../img/curso_oppc.jpg");
   background-size: cover;
 }
 
 .curso__linux {
-  background-image: url(../img/curso_oplx.jpg);
+  background-image: url("../img/curso_linux.jpg");
   background-size: cover;
 }
 
 .curso__excel {
-  background-image: url(../img/curso_excel.jpg);
+  background-image: url("../img/curso_excel.jpg");
   background-size: cover;
 }
 
 .curso__google {
-  background-image: url(../img/curso_google.jfif);
+  background-image: url("../img/curso_google.jpg");
   background-size: cover;
 }
 
-.curso__dweb {
-  background-image: url(../img//curso_dweb.jpg);
+.curso__disenoweb {
+  background-image: url("../img/curso_dweb.jpg");
   background-size: cover;
 }
 
 .curso__python {
-  background-image: url(../img/curso_python.jpg);
+  background-image: url("../img/curso_python.jpg");
   background-size: cover;
 }
 
